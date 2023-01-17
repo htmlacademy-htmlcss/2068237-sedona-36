@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Richard Yashiro](https://up.htmlacademy.ru/htmlcss/36/user/2068237).
-* Наставник: `Неизвестно`.
+- Студент: [Richard Yashiro](https://up.htmlacademy.ru/htmlcss/36/user/2068237).
+- Наставник: `Сергей Остаповец`.
 
 ---
 
