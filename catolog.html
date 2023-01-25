@@ -77,11 +77,12 @@
         <p class="subscribe-subtitle">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <form action="subscribe-form">
-          <label class="visually-hidden" for="user-email">Ваш e-mail</label>
-          <input class="subscribe-form" type="email" name="user-email" id="subscribe-form_user-email"
-            placeholder="Ваш e-mail" required>
-          <button type="submit">Подписаться</button>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="user-email">Ваш e-mail
+            <input class="subscribe-form-text" type="email" id="subscribe-form-user" name="user-email"
+              placeholder="Ваш e-mail" required>
+            <span class="subscribe-btn">Подписаться</span>
+          </label>
         </form>
       </section>
 
