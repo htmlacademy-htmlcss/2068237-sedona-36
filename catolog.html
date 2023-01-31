@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -47,6 +47,7 @@
             <a class="user-navigation-link" href="#">
               <img src="images/header/favorite.svg">
               <span class="visually-hidden">Избранное</span>
+              <span class="notification-badge">12</span>
             </a>
           </li>
           <li class="user-navigation-item">
@@ -60,6 +61,7 @@
     <!-- Main -->
 
     <main class="catolog-main">
+      <div class="catolog-main-coniner">
       <header class="catolog-main-header">
         <h1 class="catolog-main-header-title">Гостиницы Седоны</h1>
         <ul class="header-breadcrubs-list">
@@ -139,14 +141,13 @@
                 </li>
               </ul>
             </fieldset>
-          </form>
         </div>
 
         <!--Right-filter-->
 
         <div class="right-filter">
           <div class="main-price-container">
-            <form class="main-price-form" action="https://echo.htmlacademy.ru/" method="post">
+
               <fieldset class="catolog-main-price">
                 <legend>Стоимость, ₽:</legend>
 
@@ -163,6 +164,7 @@
           </div>
         </div>
       </section>
+    </div>
 
       <!--Catalog-sorting-->
 
