@@ -10,57 +10,58 @@
   </head>
 
   <body>
+    <div class="page-container">
     <!-- Header -->
+    <div class="page-container">
+      <header class="page-header">
+        <a class="header-logo" href="index.html">
+          <img src="images/header/logo.svg" width="140" height="70" alt="Логотип Седона" />
+        </a>
 
-    <header class="page-header">
-      <a class="header-logo" href="index.html">
-        <img src="images/header/logo.svg" width="140" height="70" alt="Логотип Седона" />
-      </a>
+        <!-- Page-navigation -->
 
-      <!-- Page-navigation -->
+        <nav class="page-navigation">
+          <ul class="page-navigation-list list-none">
+            <li class="page-navigation-item">
+              <a class="page-navigation-link" href="index.html">Главная</a>
+            </li>
+            <li class="page-navigation-item">
+              <a class="page-navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="page-navigation-item">
+              <a class="page-navigation-link" href="catolog.html">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
 
-      <nav class="page-navigation">
-        <ul class="page-navigation-list list-none">
-          <li class="page-navigation-item">
-            <a class="page-navigation-link" href="#">Главная</a>
-          </li>
-          <li class="page-navigation-item">
-            <a class="page-navigation-link" href="#">О Седоне</a>
-          </li>
-          <li class="page-navigation-item">
-            <a class="page-navigation-link" href="catolog.html">Гостиницы</a>
-          </li>
-        </ul>
-      </nav>
+        <!-- User-navigation -->
 
-      <!-- User-navigation -->
+        <nav class="user-navigation">
+          <ul class="user-navigation-list list-none">
+            <li class="user-navigation-item">
+              <a class="user-navigation-link" href="#">
+                <img class="user-navigation-img" src="images/header/search.svg">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="user-navigation-item">
+              <a class="user-navigation-link" href="#">
+                <img  class="user-navigation-img" src="images/header/favorite.svg">
+                <span class="visually-hidden">Избранное</span>
+                <span class="notification-badge visually-hidden">12</span>
+              </a>
+            </li>
+            <li class="user-navigation-item">
+              <a class="popup" href="#"> Хочу сюда! </a>
+            </li>
+          </ul>
+        </nav>
 
-      <nav class="user-navigation">
-        <ul class="user-navigation-list list-none">
-          <li class="user-navigation-item">
-            <a class="user-navigation-link" href="#">
-              <img src="images/header/search.svg">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="user-navigation-item">
-            <a class="user-navigation-link" href="#">
-              <img src="images/header/favorite.svg">
-              <span class="visually-hidden">Избранное</span>
-              <span class="notification-badge">12</span>
-            </a>
-          </li>
-          <li class="user-navigation-item">
-            <a class="popup" href="#"> Хочу сюда! </a>
-          </li>
-        </ul>
-      </nav>
-
-    </header>
+      </header>
     <!-- Main -->
 
     <main class="catolog-main">
-      <div class="catolog-main-coniner">
+      <div class="catolog-main-container">
         <header class="catolog-main-header">
           <h1 class="catolog-main-header-title">Гостиницы Седоны</h1>
           <ul class="header-breadcrubs-list list-none">
@@ -70,9 +71,7 @@
                 <img src="images/catolog/filter/home-main.svg" alt="Иконка дома" >
               </a>
             </li>
-            <li class="header-breadcrubs-item">
-              <img src="images/catolog/filter/arrow-right.svg" alt="Вектор" >
-            </li>
+
             <li class="header-breadcrubs-item">
               <a class="header-breadcrubs-link"> Гостиницы </a>
             </li>
@@ -84,7 +83,7 @@
         <section class="catolog-main-filter">
           <!--Left-filter-->
 
-          <div class="left-filter">
+
             <form class="catalog-form-filter" action="https://echo.htmlacademy.ru/" method="get">
               <!--checkbox-->
 
@@ -140,30 +139,25 @@
                   </li>
                 </ul>
               </fieldset>
-          </div>
 
-          <!--Right-filter-->
 
-          <div class="right-filter">
-            <div class="main-price-container">
+                <fieldset class="catalog-form-filter-group">
+                  <legend class="catalog-form-filter-title">Стоимость, ₽:</legend>
 
-              <fieldset class="catolog-main-price">
-                <legend class="catalog-form-filter-title">Стоимость, ₽:</legend>
+                  <div class="main-price">
+                    <input type="text" placeholder="от" name="main-price" id="main-price" required />
+                    <input type="text" placeholder="до" name="main-price" id="main-price-to" required />
+                  </div>
+                </fieldset>
 
-                <div class="main-price">
-                  <input type="text" placeholder="от" name="main-price" id="main-price" required />
-                  <input type="text" placeholder="до" name="main-price" id="main-price-to" required />
-                </div>
-              </fieldset>
-              </form>
-            </div>
+
             <div class="main-buttons">
               <button class="btn subscribe-form-button" type="submit">Применить</button>
               <button class="btn bt-reset" type="reset">Сбросить</button>
             </div>
-          </div>
+          </form>
         </section>
-      </div>
+        </div>
 
       <!--Catalog-sorting-->
 
@@ -177,13 +171,13 @@
 
           <!--Drop-menu-->
 
-          <div class="drop-menu">
+
             <select class="select-control" aria-label="Сортировка">
               <option value="cheap">Сначала дешёвые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
-          </div>
+
           <!--Card-whatch-->
 
           <div class="catalog-buttons">
@@ -191,11 +185,11 @@
               <img src="images/catolog/sort/card.svg" alt="">
               <span class="visually-hidden">Показать карточки</span>
             </a>
-            <a class="catalog-button-link" href="#">
+            <a href="#" class="catalog-button-link" >
               <img src="images/catolog/sort/card-2.svg" alt="">
               <span class="visually-hidden">Показать карточки</span>
             </a>
-            <a class="catalog-button-link" href="#">
+            <a href="#" class="catalog-button-link">
               <img src="images/catolog/sort/сard-list.svg" alt="">
               <span class="visually-hidden">Показать списком</span>
             </a>
@@ -297,7 +291,7 @@
             </div>
           </li>
         </ul>
-        <div class="pagitation-container">
+        <div class="pagination-container">
           <ul class="pagination  list-none">
             <li class="pagination-item">
               <a class="pagination-link active">1</a>
@@ -312,6 +306,9 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
+              <a>...</a>
+            </li>
+            <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
@@ -323,16 +320,16 @@
       <section class="subscribe-catolog">
         <h2 class="subscribe-catolog-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-subtitle">
-          Только полезная информация и никакого спама, честное бойскаутское!
+          Только полезная информация и никакого спама,<br> честное бойскаутское!
         </p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-          <label for="subscribe-form-user">
+          <label for="subscribe-form-user visually-hidden" for="email"></label>
             <input class="subscribe-form-text" type="email" id="subscribe-form-user" name="user-email"
               placeholder="Ваш e-mail" required />
             <button class="subscribe-form-button" type="submit">
               Подписаться
             </button>
-          </label>
+
         </form>
       </section>
     </main>
@@ -377,7 +374,7 @@
         </a>
       </section>
     </footer>
-
+  </div>
   </body>
 
 </html>
