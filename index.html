@@ -11,16 +11,16 @@
 
   <body>
     <!-- Header -->
-
+    <div class="page-container">
     <header class="page-header">
-      <a class="header-logo" href="images/header/logo.svg">
+      <a class="header-logo" href="index.html">
         <img src="images/header/logo.svg" width="140" height="70" alt="Логотип Седона" />
       </a>
 
       <!-- Page-navigation -->
 
       <nav class="page-navigation">
-        <ul class="page-navigation-list">
+        <ul class="page-navigation-list list-none">
           <li class="page-navigation-item">
             <a class="page-navigation-link" href="#">Главная</a>
           </li>
@@ -28,7 +28,7 @@
             <a class="page-navigation-link" href="#">О Седоне</a>
           </li>
           <li class="page-navigation-item">
-            <a class="page-navigation-link" href="#">Гостиницы</a>
+            <a class="page-navigation-link" href="catolog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -36,7 +36,7 @@
       <!-- User-navigation -->
 
       <nav class="user-navigation">
-        <ul class="user-navigation-list">
+        <ul class="user-navigation-list list-none">
           <li class="user-navigation-item">
             <a class="user-navigation-link" href="#">
               <img src="images/header/search.svg">
@@ -65,9 +65,13 @@
 
       <section class="sedona-welcome">
         <h1 class="visually-hidden">Добро пожаловать в великолепную седону</h1>
+        <div>
         <img class="sedona-welcome-img" src="images/index/hero/welcome.svg"
-          alt="Добро пожаловать в великолепную седону" />
-        <img src="images/index/hero/stairs.svg">
+          alt="Добро пожаловать в великолепную седону" >
+        </div>
+
+        <img src="images/index/hero/stairs.svg" >
+
       </section>
 
       <!--About-sedona-->
@@ -85,7 +89,7 @@
 
       <section class="benefit">
         <h2 class="visually-hidden">Приемущества</h2>
-        <ul class="benefit-list">
+        <ul class="benefit-list list-none">
           <li class="benefit-item">
             <div class="conteiner-benefit-item">
               <h3 class="benefit-title">Настоящий городок</h3>
@@ -94,7 +98,7 @@
               </p>
             </div>
             <div class="conteiner-benefit-img">
-              <img class="benefit-img" src="images/index/sedona/city.jpg" alt="Вид города" />
+              <img class="benefit-img" src="images/index/sedona/city.jpg" width: 800px; height: 385px; alt="Вид города" />
             </div>
           </li>
           <li class="benefit-item">
@@ -123,7 +127,7 @@
           </li>
           <li class="benefit-item">
             <div class="conteiner-benefit-img">
-              <img class="benefit-img" src="images/index/sedona/career.jpg" alt="Мост дьявола" />
+              <img class="benefit-img" src="images/index/sedona/career.jpg"  width: 800px; height: 385px; alt="Мост дьявола" />
             </div>
             <div class="conteiner-benefit-item">
               <h3 class="benefit-title">Там есть мост дьявола</h3>
@@ -150,7 +154,7 @@
 
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
-        <ul class="services-list">
+        <ul class="services-list list-none">
           <li class="services-item">
             <div class="container-services-img">
             <img src="images/index/servies/home.svg" alt="Домик" />
@@ -197,7 +201,7 @@
             предложения гостиниц в Седоне
           </p>
         </div>
-        <a class="trip-date-sedona-link" href="#"> Поиск гостиницы в седоне </a>
+        <a class="trip-date-sedona-link popup" href="#"> Поиск гостиницы в седоне </a>
       </section>
 
       <!--Subscribe-->
@@ -208,7 +212,7 @@
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="subscribe-form-user">Ваш e-mail
+          <label  for="subscribe-form-user">
             <input class="subscribe-form-text" type="email" id="subscribe-form-user" name="user-email"
               placeholder="Ваш e-mail" required />
             <button class="subscribe-form-button" type="submit">
@@ -224,7 +228,7 @@
     <footer class="page-footer">
       <section class="page-footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="page-footer-social-list">
+        <ul class="page-footer-social-list list-none">
           <li class="page-footer-social-item">
             <a class="page-footer-social-link" href="https://vk.com/htmlacademy">
               <h3 class="visually-hidden">ВКонтакте</h3>
@@ -254,10 +258,11 @@
       <section class="page-footer-academy">
         <h2 class="visually-hidden">html academy</h2>
         <a class="page-footer-academy-link" href="https://htmlacademy.ru">
-          <img src="images/footer/html_academy.svg" alt="Логотип html academy" />
+          <img src="images/footer/html-academy.svg" alt="Логотип html academy" />
         </a>
       </section>
     </footer>
+  </div>
   </body>
 
 </html>
