@@ -88,13 +88,14 @@ body {
   padding: 20px 16px;
 
 }
-.user-navigation-list{
-  display: flex;
-
+.user-navigation {
+  margin-left: auto;
 }
 
-.user-navigation-img{
 
+
+.user-navigation-list{
+  display: flex;
 
 }
 
@@ -132,12 +133,20 @@ padding: 8px 34px;
 .sedona-welcome {
   background-image: url(../images/index/hero/index-background.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   display:flex;
   justify-content: center;
   padding: 51px 0 82px 0;
 }
 
+.sedona-welcome:after {
+  content: "";
+  display: block;
+  background: url("../images/index/hero/stairs.svg;");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 57px
+}
 .about-sedona {
   text-align: center;
   padding: 64px 0;
@@ -216,7 +225,8 @@ padding: 8px 34px;
   text-align: center;
   display: flex;
   flex-direction: column;
-
+  min-width: 400px;
+  min-height: 385px;
   padding: 102px 85px;
 }
 .list-none {
@@ -273,7 +283,7 @@ padding: 8px 34px;
 }
 
 .subscribe {
-  background-image: url(../images/footer/subscribe/subscribe.jpg);
+  background-image: url(../images/subscribe/subscribe.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -347,6 +357,7 @@ padding: 8px 34px;
 .page-footer-social-list{
   display: flex;
   flex-wrap: wrap;
+  margin-top: auto;
 
 }
 
@@ -604,11 +615,11 @@ display: flex;
 }
 
 .pagination-link.active {
-  background-color: RGB(242, 242, 242);
+  background-color: #f2f2f2;
   color: rgb(0, 0, 0);
 }
 
 .pagination-link {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   background-color: #82B3D3;
  }
