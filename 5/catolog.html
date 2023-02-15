@@ -115,7 +115,7 @@
               <!--radio-->
 
               <fieldset class="catalog-form-filter-group">
-                <legend class="catalog-form-filter-title">Тип жилья:</legend>
+                <legend class="catalog-form-filter-title">Тип Жилья:</legend>
                 <ul class="catalog-filter-list list-none">
                   <li class="catalog-filter-item">
                     <label>
@@ -142,18 +142,18 @@
               </fieldset>
 
 
-                <fieldset class="catalog-form-filter-group">
+                <fieldset class="catalog-form-filter-group catalog-price-form">
                   <legend class="catalog-form-filter-title">Стоимость, ₽:</legend>
 
                   <div class="main-price">
-                    <input type="text" placeholder="от" name="main-price" id="main-price" required />
-                    <input type="text" placeholder="до" name="main-price" id="main-price-to" required />
+                    <input type="text" placeholder="от"  class="main-price-for" name="main-price" id="main-price" required />
+                    <input type="text" placeholder="до"   class="main-price-to" name="main-price" id="main-price-to" required />
                   </div>
                 </fieldset>
 
 
             <div class="main-buttons">
-              <button class="btn subscribe-form-button" type="submit">Применить</button>
+              <button class="btn submit-button" type="submit">Применить</button>
               <button class="btn bt-reset" type="reset">Сбросить</button>
             </div>
           </form>
@@ -181,16 +181,16 @@
 
           <!--Card-whatch-->
 
-          <div class="catalog-buttons">
-            <a href="#" class="catalog-button-link active">
+          <div class="whatch-button">
+            <a href="#" class="whatch-button-link active">
               <img src="images/catolog/sort/card.svg" alt="">
               <span class="visually-hidden">Показать карточки</span>
             </a>
-            <a href="#" class="catalog-button-link" >
+            <a href="#" class="whatch-button-link" >
               <img src="images/catolog/sort/card-2.svg" alt="">
               <span class="visually-hidden">Показать карточки</span>
             </a>
-            <a href="#" class="catalog-button-link">
+            <a href="#" class="whatch-button-link">
               <img src="images/catolog/sort/сard-list.svg" alt="">
               <span class="visually-hidden">Показать списком</span>
             </a>
@@ -210,7 +210,7 @@
                 212px; alt="Фото гостиницы" >
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             </a>
-            <div>
+            <div class="hotel-price">
               <span class="hotel-card-type">Гостиница</span>
               <span class="hotel-card-price">От 4000 ₽</span>
             </div>
@@ -221,7 +221,7 @@
 
             <div class="reting-star">
               <div class="rating-stars-list">
-
+                <img src="images/catolog/hotels/stars/four-stars.svg" width: 140px; height: 37px; alt="4 звезды">
               </div>
               <span class="rating-text">Рейтинг: 8,5</span>
             </div>
@@ -233,17 +233,17 @@
                 212px; alt="Фото гостиницы" />
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             </a>
-            <div>
+            <div class="hotel-price">
               <span class="hotel-card-type">Гостиница</span>
               <span class="hotel-card-price">От 5000 ₽</span>
             </div>
             <div class="catalog-buttons">
               <button class="hotel-card-button-more btn" href="#">Подробнее</button>
-              <button class="hotel-card-button-favourites btn" href="#">В избранное</button>
+              <button class="hotel-card-button-favourites active btn" href="#">В избранном</button>
             </div>
             <div class="reting-star">
               <div class="rating-stars-list">
-
+                <img src="images/catolog/hotels/stars/four-stars.svg" width: 140px; height: 37px; alt="4 звезды">
               </div>
               <span class="rating-text">Рейтинг: 9,2</span>
             </div>
@@ -255,7 +255,7 @@
                 212px; alt="Фото гостиницы" />
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
             </a>
-            <div>
+            <div class="hotel-price">
               <span class="hotel-card-type">Гостиница</span>
               <span class="hotel-card-price">От 2500 ₽</span>
             </div>
@@ -265,7 +265,7 @@
             </div>
             <div class="reting-star">
               <div class="rating-stars-list">
-
+                <img src="images/catolog/hotels/stars/three-stars.svg" width: 140px; height: 37px; alt="3 звезды">
               </div>
               <span class="rating-text">Рейтинг: 6,9</span>
             </div>
@@ -273,20 +273,21 @@
 
           <li class="hotel-item">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="images/catolog/hotels/amara-resort-spa.jpg" width: 300px; height:
+              <img class="hotel-card-image" src="images/catolog/hotels/green-tree-inn.jpg" width: 300px; height:
                 212px; alt="Фото гостиницы" />
-              <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+              <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
-
+            <div class="hotel-price">
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-price">От 1500 ₽</span>
+            </div>
             <div class="catalog-buttons">
               <button class="hotel-card-button-more btn" href="#">Подробнее</button>
               <button class="hotel-card-button-favourites btn" href="#">В избранное</button>
             </div>
             <div class="reting-star">
               <div class="rating-stars-list">
-
+                <img src="images/catolog/hotels/stars/two-stars.svg" width: 140px; height: 37px; alt="2 звезды">
               </div>
               <span class="rating-text">Рейтинг: 5,0</span>
             </div>
