@@ -12,7 +12,7 @@
   <body>
     <div class="page-container">
     <!-- Header -->
-    <div class="page-container">
+
       <header class="page-header">
         <a class="header-logo" href="index.html">
           <img src="images/header/logo.svg" width="140" height="70" alt="Логотип Седона" />
@@ -29,7 +29,7 @@
               <a class="page-navigation-link" href="#">О Седоне</a>
             </li>
             <li class="page-navigation-item">
-              <a class="page-navigation-link" href="catolog.html">Гостиницы</a>
+              <a class="page-navigation-link" >Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -145,8 +145,10 @@
                   <legend class="catalog-form-filter-title">Стоимость, ₽:</legend>
 
                   <div class="main-price">
-                    <input type="text" placeholder="от"  class="main-price-for" name="main-price" id="main-price" required />
-                    <input type="text" placeholder="до"   class="main-price-to" name="main-price" id="main-price-to" required />
+                    <label>
+                    <input type="text"   class="main-price-for" name="main-price" id="main-price" required />
+                    <input type="text"    class="main-price-to" name="main-price" id="main-price-to" required />
+                  </label>
                   </div>
                 </fieldset>
 
@@ -178,18 +180,18 @@
               <option value="popular">Сначала популярные</option>
             </select>
 
-          <!--Card-whatch-->
+          <!--Card-show-->
 
-          <div class="whatch-button">
-            <a href="#" class="whatch-button-link active">
+          <div class="show-button">
+            <a href="#" class="show-button-link active">
               <img src="images/catolog/sort/card.svg" alt="">
               <span class="visually-hidden">Показать карточки</span>
             </a>
-            <a href="#" class="whatch-button-link" >
+            <a href="#" class="show-button-link" >
               <img src="images/catolog/sort/card-2.svg" alt="">
               <span class="visually-hidden">Показать карточки</span>
             </a>
-            <a href="#" class="whatch-button-link">
+            <a href="#" class="show-button-link">
               <img src="images/catolog/sort/сard-list.svg" alt="">
               <span class="visually-hidden">Показать списком</span>
             </a>
@@ -345,21 +347,21 @@
           <li class="page-footer-social-item">
             <a class="page-footer-social-link" href="https://vk.com/htmlacademy">
               <h3 class="visually-hidden">ВКонтакте</h3>
-              <img src="images/footer/vk.svg">
+              <img src="images/footer/vk-image-link.svg">
             </a>
           </li>
 
           <li class="page-footer-social-item">
             <a class="page-footer-social-link" href="https://te.me/htmlacademy">
               <h3 class="visually-hidden">Телеграм</h3>
-              <img src="images/footer/telegram.svg">
+              <img src="images/footer/telegram-image-link.svg">
             </a>
           </li>
 
           <li class="page-footer-social-item">
             <a class="page-footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
               <h3 class="visually-hidden">Ютюб</h3>
-              <img src="images/footer/youtube.svg">
+              <img src="images/footer/youtube-image-link.svg">
             </a>
           </li>
         </ul>
