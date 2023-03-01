@@ -537,6 +537,116 @@ top: calc(50% - 52px/2 + 81px);
   flex-wrap: wrap;
   margin-top: auto;
 }
+.check{
+padding-left: 26px;
+}
+
+.check-input{
+  -webkit-appearance:none ;
+  -moz-appearance:none ;
+  position:absolute;
+}
+
+.check-box-icon{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image:url(../images/catolog/filter/check-box.svg) ;
+  cursor: pointer;
+  margin-left: -26px;
+  margin-top: 1px;
+}
+
+
+/* checked*/
+.check-input:checked + .check-box-icon {
+  background-image:url(../images/catolog/filter/checkbox-checked.svg) ;
+
+}
+
+.catalog-form-filter .type-infrastructure{
+  margin-right: 71px;
+}
+
+.catalog-form-filter .type-home{
+  margin-right: 69px;
+}
+
+.radio-check{
+  padding-left: 36px;
+  }
+
+  .real-radio{
+    -webkit-appearance:none ;
+    -moz-appearance:none ;
+    position:absolute;
+  }
+
+  .raido-check-box-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: -36px;
+    margin-top: 1px;
+}
+
+
+  /* checked*/
+  .real-radio:checked + .raido-check-box-icon {
+    clip-path: circle(40%);
+    opacity: 1;
+
+  }
+
+  .range-scale {
+    position: relative;
+    height: 0;
+    margin-top: 44px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+
+  }
+
+  .range-bar {
+    position: absolute;
+    height: 3px;
+    background-color: #FFFFFF;
+
+
+    top: -1px;
+  }
+
+  .range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+
+    cursor: pointer;
+    border: none;
+  }
+  .toggle-min {
+    top: -9px;
+    left: -13px;
+}
+
+.toggle-max {
+  top: -9px;
+  right: -16px;
+}
+
+  .range-toggle:hover {
+    background-color: #68a2ca;
+  }
+
+  .range-toggle:active,
+  .range-toggle:focus {
+    outline: 3px solid #82b3d3;
+  }
+
 
 .subscribe-form {
   margin: 0;
@@ -596,7 +706,6 @@ color: rgba(255, 255, 255, 0.3);
 }
 
 .main-price {
-  gap: 2px;
   display: flex;
   flex-direction: row;
 
@@ -608,6 +717,28 @@ color: rgba(255, 255, 255, 0.3);
   border: none;
   width: 143px;
   height: 48px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 20px;
+
+
+  margin-right: -3px;
+}
+.main-price-for::placeholder{
+  color: #000000;
+}
+
+
+
+.main-price-for-placeholder{
+  position: absolute;
+  color: #000000;
+
+line-height: 24px;
+opacity: 0.3;
+top: 13px;
+    right: 165px;
 }
 .main-price-to {
   background: #f2f2f2;
@@ -615,8 +746,29 @@ color: rgba(255, 255, 255, 0.3);
   border: none;
   width: 143px;
   height: 48px;
+  font-weight: 700;
+font-size: 18px;
+line-height: 24px;
+padding: 12px 20px;
+color: #000000;
 }
 
+.main-price-to::placeholder{
+  color: #000000;
+}
+
+.main-price-wrapper{
+position: relative;
+}
+
+.main-price-to-placeholder{
+  position: absolute;
+  color: #000000;
+line-height: 24px;
+opacity: 0.3;
+top: 13px;
+    right: 20px;
+}
 .main-buttons {
   display: flex;
   flex-direction: column;
@@ -721,7 +873,7 @@ object-fit: cover;
 }
 
 .catolog-main-filter .catalog-price-form {
-  margin-left: 92px;
+  margin-left: 82px;
   margin-right: 50px;
 
 }
@@ -765,6 +917,7 @@ object-fit: cover;
 }
 .check-box {
   line-height: 23px;
+  margin-left: 10px;
 }
 
 .custom-radio {
@@ -844,6 +997,7 @@ object-fit: cover;
   text-transform: uppercase;
   margin-left: -1px;
   margin-right: 1px;
+  margin-top: 1px;
 
 
 }
@@ -851,7 +1005,7 @@ object-fit: cover;
 .hotel-card-button-favourites{
   text-align: center;
   text-transform: uppercase;
-
+margin-top: 1px;
 
 }
 
@@ -1026,6 +1180,7 @@ object-fit: cover;
   background-color: #ffffff;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 border-radius: 30px;
+
 }
 .modal-title {
   font-weight: 700;
@@ -1038,8 +1193,13 @@ margin-bottom: 64px;
 }
 .modal-serch{
 width: 717px;
-
 }
+
+.model-date-title{
+  padding: 12px 0;
+  text-transform: capitalize;
+}
+
 
 .modal-content{
   position: relative;
@@ -1071,7 +1231,21 @@ width: 717px;
 border-radius: 4px;
 border: none;
 display: block;
+width: 100%;
+position: relative;
 }
+
+.modal-serch-date{
+  position: relative;
+}
+
+.modal-serch-date svg{
+  position: absolute;
+  fill-opacity: 0.3;
+  right: 22px;
+  top: 16px;
+}
+
 
 .date-form-sub{
   color: #FF5757;
@@ -1079,6 +1253,7 @@ display: block;
 font-size: 16px;
 line-height: 21px;
 padding-left: 20px;
+
 }
 
 
@@ -1087,7 +1262,9 @@ padding-left: 20px;
   font-size: 16px;
   line-height: 21px;
   color: #333333;
-  display: block;
+
+  padding-left: 20px;
+
 }
 .date-form{
   font-weight: 700;
@@ -1096,8 +1273,102 @@ line-height: 24px;
 display: grid;
 grid-template-columns: 137px 1fr;
 }
+
+.field{
+  padding: 12px 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.leave-date{
+  margin-top: 24px;
+}
 .adults-label, .children-label{
   font-weight: 700;
 font-size: 20px;
 line-height: 24px;
+}
+
+.number-field{
+  display: block;
+  width: 110px;
+}
+.wrapper-people-date{
+  display: flex;
+}
+
+.people-form{
+  margin-top: 23px;
+  margin-bottom: 48px;
+}
+.tooltip{
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 10px;
+  margin-right: 46px;
+  transform: translateY(50%);
+}
+
+.tooltip-toggle {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  margin-bottom: 11px;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: #333333;
+  box-shadow: 0 15px 30px rgb(0 0 0 / 30%);
+  border-radius: 10px;
+  padding: 20px 18px 23px 22px;
+  z-index: 1;
+  display: none;
+  position: absolute;
+  width: 256px;
+  left: 51%;
+  transform: translateX(-50%);
+}
+.tooltip-text::before {
+  content:'';
+  background-image: url("../images/modal/arrow-down.svg");
+  width: 19px;
+  height: 9px;
+  position:absolute;
+
+  top: -6%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.children-label{
+  margin-left: 88px;
+}
+
+.button-search{
+  width: 100%;
+  font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-transform: uppercase;
+margin: 0 auto;
+border-radius: 10px;
+padding:18px 0;
 }
