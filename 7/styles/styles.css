@@ -914,13 +914,17 @@ outline: none;
 .hotel-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
-  gap: 20px;
+  gap: 18px 20px;
+  margin-bottom: 39px;
+}
+.rating-stars-list{
+  margin-top: 1px;
 }
 .hotel-card-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 16px;
-  column-gap: 19px;
+  row-gap: 15px;
+  column-gap: 20px;
 }
 .hotel-card-image {
   width: 100%;
@@ -1040,7 +1044,7 @@ outline: none;
   text-align: center;
   text-transform: uppercase;
   gap: 8px;
-
+  margin-bottom: 1px;
   display: flex;
 }
 
@@ -1062,7 +1066,7 @@ outline: none;
 
 .catalog-sorting-wrapper {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   align-items: center;
 }
 
@@ -1083,7 +1087,7 @@ outline: none;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-  margin: 16px 0;
+  margin: 17px 0 16px 0;
 }
 
 .hotel-card-button-more {
@@ -1092,15 +1096,13 @@ outline: none;
   padding: 8px 26px;
   text-align: center;
   text-transform: uppercase;
-  margin-left: -1px;
-  margin-right: 1px;
-  margin-top: 1px;
+
 }
 
 .hotel-card-button-favourites {
   text-align: center;
   text-transform: uppercase;
-  margin-top: 1px;
+
 }
 
 .rating-text {
@@ -1112,12 +1114,13 @@ outline: none;
   padding: 9px 22px 8px 23px;
   width: 140px;
   height: 37px;
+  margin-top: 1px;
 }
 
 .select-control {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  padding: 11px 18px;
+  padding: 12px 18px;
   width: 292px;
   margin-left: auto;
   margin-right: 70px;
@@ -1188,7 +1191,7 @@ border-radius: 4px;
 }
 
 .pagination-container {
-  margin-top: 40px;
+
   border-top: 1px solid #e6e6e6;
 }
 
@@ -1224,11 +1227,11 @@ border-radius: 4px;
   line-height: 36px;
   display: flex;
   gap: 8px;
-  margin: 40px 0 60px 0;
+  margin: 39px 0 60px 0;
 }
 
 .hotel-item {
-  padding: 20px;
+  padding: 20px 19px 16px;
   border-radius: 4px;
   border: 1px solid #e6e6e6;
   min-width: 0;
