@@ -844,6 +844,7 @@ input[type=number] {
 
 .main-price-for::placeholder {
   color: #000000;
+  opacity: 0.8;
 }
 
 .main-price-for:focus{
