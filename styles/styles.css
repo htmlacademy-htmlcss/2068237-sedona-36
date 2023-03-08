@@ -486,14 +486,19 @@ body {
   padding: 45px 70px 30px 70px;
   align-items: center;
 }
-
-
+.page-footer-academy-link{
+  outline: none;
+}
+.page-footer-social-link:focus{
+  outline:none;
+}
 .page-footer-social-link svg :hover {
   fill: #68a2ca;
 }
 
-.page-footer-social-link svg :focus {
+.page-footer-social-link:focus  path{
   fill: #68a2ca;
+
 }
 .page-footer-social-link svg :active {
   fill: rgba(104, 162, 202, 0.3);
@@ -502,8 +507,9 @@ body {
   fill: #756157;
 }
 
-.page-footer-academy-link :focus path {
+.page-footer-academy-link:focus path {
   fill: #756157;
+
 }
 
 .page-footer-academy-link:active path {
@@ -521,6 +527,7 @@ body {
 
 .page-footer-phone-link:focus {
   color: #756157;
+  outline: none;
 }
 
 .page-footer-phone-link:active {
@@ -728,6 +735,7 @@ body {
 
 .subscribe-form-button:focus {
  outline: none;
+ background: #68a2ca;
 
 }
 
@@ -785,6 +793,23 @@ body {
 outline: none;
 }
 
+.main-price-wrapper .main-price-for:disabled {
+  background: #E5E5E5;
+  color: rgba(0, 0, 0, 0.3);
+}
+.main-price-wrapper .main-price-to:disabled {
+  background: #E5E5E5;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-price-for:not(:placeholder-shown):focus {
+  outline: 2px solid #000000;
+}
+
+.main-price-to:not(:placeholder-shown):focus {
+  outline: 2px solid #000000;
+}
+
 
 .main-price {
   display: flex;
@@ -801,12 +826,39 @@ outline: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  padding: 12px 20px;
+  padding: 16px 38px 13px 20px;
   margin-right: 2px;
+
+
 }
+
+.main-price-wrapper input::-webkit-outer-spin-button,
+.main-price-wrapper input::-webkit-inner-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+
+}
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
 .main-price-for::placeholder {
   color: #000000;
 }
+
+.main-price-for:focus{
+  outline: 3px solid #83b3d3;
+}
+
+.main-price-for:hover{
+  background: #E6E6E6;
+}
+
+.main-price-to:hover{
+  background: #E6E6E6;
+}
+
+
 
 .main-price-for-placeholder {
   position: absolute;
@@ -826,13 +878,17 @@ outline: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  padding: 12px 20px;
+  padding: 16px 38px 13px 20px;
   color: #000000;
 }
 
 .main-price-to::placeholder {
   color: #000000;
 }
+.main-price-to:focus{
+  outline: 3px solid #83b3d3;
+}
+
 
 .main-price-wrapper {
   position: relative;
@@ -873,6 +929,20 @@ outline: none;
   font-size: 18px;
   line-height: 24px;
   font-family: 'PT Sans';
+}
+.subscribe-form-text:disabled{
+  background: #E5E5E5;
+  color: rgba(0, 0, 0, 0.3);
+}
+.subscribe-form-text:not(:placeholder-shown):focus {
+  outline: 2px solid #000000;
+}
+.subscribe-form-text:focus{
+  outline: 3px solid #83b3d3;
+}
+
+.subscribe-form-text:hover{
+  background: #E6E6E6;
 }
 
 .catolog-main {
@@ -1192,6 +1262,7 @@ border-radius: 4px;
 }
 .show-button-link:disabled {
   border: 2px solid #000000;
+  fill: #808080;
 }
 
 .catalog-button-link {
@@ -1398,13 +1469,29 @@ border-radius: 4px;
   position: relative;
 }
 
+
 .date-field:hover {
   background: #e6e6e6;
 }
-input[type="text"]:focus-visible,
-input[type="email"]:focus-visible {
+.date-field:focus{
   outline: 3px solid #83b3d3;
 }
+.date-field:focus:not(:placeholder-shown) {
+  outline: 2px solid #000000;
+}
+.button-minus,
+.button-plus{
+  outline: none;
+}
+.button-minus:focus svg,
+.button-plus:focus svg {
+  outline: 3px solid #82b3d3;
+  border-radius: 4px;
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+}
+
 
 .modal-serch-date {
   position: relative;
@@ -1448,6 +1535,8 @@ input[type="email"]:focus-visible {
   line-height: 24px;
   font-family: "PT Sans";
 }
+
+
 
 .leave-date {
   margin-top: 24px;
@@ -1499,8 +1588,8 @@ input[type="email"]:focus-visible {
   height: 26px;
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: 11px;
-  margin-right: 46px;
+  margin-left: 10px;
+  margin-right: 47px;
   transform: translateY(46%);
 }
 
@@ -1593,7 +1682,7 @@ input[type="email"]:focus-visible {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 14px 12px 14px 13px;
+
   background: #f2f2f2;
   border: none;
   cursor: pointer;
@@ -1618,7 +1707,7 @@ input[type="email"]:focus-visible {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 14px 10px 14px 11px;
+
   background: #f2f2f2;
   border: none;
   cursor: pointer;
