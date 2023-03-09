@@ -49,6 +49,7 @@ body {
   color: #333333;
   min-height: 100%;
   margin: 0;
+  background: rgb(242, 242, 242);
 }
 
 
@@ -210,6 +211,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 51px;
+  background-color: rgba(131, 179, 211, 0.5);
 }
 
 .sedona-welcome:after {
@@ -366,6 +368,32 @@ body {
   padding: 79px 85px;
 }
 
+.services-item-backgroung-home{
+  background-image: url(../images/index/servies/home.svg);
+  width: 75px;
+height: 72px;
+left: calc(50% - 75px/2 + 1px);
+top: calc(50% - 72px/2);
+background-repeat:no-repeat
+}
+
+.services-item-backgroung-eat{
+  background-image: url(../images/index/servies/food.svg);
+  width: 74px;
+height: 70px;
+left: calc(50% - 74px/2 + 0.5px);
+top: calc(50% - 70px/2);
+background-repeat:no-repeat
+}
+.services-item-backgroung-gift{
+  background-image: url(../images/index/servies/gift.svg);
+  width: 64px;
+  height: 76px;
+  left: calc(50% - 64px/2 + 0.5px);
+  top: calc(50% - 76px/2);
+background-repeat:no-repeat
+}
+
 .services-list {
   display: flex;
   flex-wrap: wrap;
@@ -432,6 +460,7 @@ body {
   color: #ffffff;
   text-align: center;
   padding: 96px 258px 104px 258px;
+  background-color: rgba(131, 179, 211, 0.5);
 }
 
 .subscribe-catolog {
@@ -472,8 +501,6 @@ body {
   align-items: center;
   padding: 8px 50px;
   gap: 10px;
-
-  width: 376px;
   height: 52px;
   left: calc(50% - 376px / 2);
   top: calc(50% - 52px / 2 + 81px);
@@ -957,6 +984,7 @@ input[type=number] {
   margin-bottom: 50px;
   padding: 35px 70px 70px;
   color: #ffffff;
+  background-color: rgba(131, 179, 211, 0.5);
 }
 
 .header-breadcrubs-item {
